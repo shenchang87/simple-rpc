@@ -9,6 +9,7 @@ import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProce
 import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.EnvironmentAware;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 
-public class ImportProxyBean  implements ApplicationContextAware, BeanDefinitionRegistryPostProcessor {
+public class ImportProxyBean  implements ApplicationContextAware, BeanDefinitionRegistryPostProcessor, EnvironmentAware {
 
     private static ApplicationContext applicationContext;
     private String   backPackage=null;
@@ -61,5 +62,9 @@ public class ImportProxyBean  implements ApplicationContextAware, BeanDefinition
         System.out.println(backPackage);
         System.out.println(zkAddress);
 
+    }
+
+    public void setEnvironment(Environment environment) {
+        System.out.println("Environment---------------------");
     }
 }
