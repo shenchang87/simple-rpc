@@ -20,4 +20,6 @@ public @interface RcpService {
      * 服务版本号
      */
     String version() default "";
+
+    aaa
 }
