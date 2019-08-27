@@ -21,5 +21,5 @@ public @interface RcpService {
      */
     String version() default "";
 
-    aaa
+
 }
