@@ -1,5 +1,5 @@
 package com.sc.annotation;
 
 public class aaa {
-    public  String a="2.0";
+    public  String a="4.0";
 }
