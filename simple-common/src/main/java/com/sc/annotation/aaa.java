@@ -2,6 +2,6 @@ package com.sc.annotation;
 
 public class aaa {
 
-    public  String a="4444.mod";
+    public  String a="4444.mod  啊啊啊";
 
 }
